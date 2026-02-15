@@ -1,0 +1,115 @@
+body {
+      background-color:#ffffff;
+      /*color:#F0F0F0;*/
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 20px 5px;
+      text-align: center;
+	  font-family:Verdana, Arial, Helvetica, sans-serif;
+	  color:#8E7212;
+}
+
+p {font-size:11px;margin-top:0px;margin-bottom:10px;text-align:justify}
+
+a {color:#C8A940;}
+
+h1 {
+	font-size:18px;
+	font-weight:bold;
+	color:#C57676;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.clearboth {clear:both;font-size:0px;}
+
+#main {
+	   width:797px;
+       text-align:left;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: #ffffff;
+       margin-top:0px;
+       padding-top:10px;
+       }
+	   
+#head 
+	{
+	height:212px;
+	background-image:url(images/head.jpg);
+	background-repeat:no-repeat;
+	}
+ 
+#doc
+	{
+	width:797px;
+	background-image:url(images/bg_doctop.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	clear:both;
+	background-color:#FFFFFF;
+
+	}
+	
+#doc #in
+	{
+	width:797px;
+	background-image:url(images/bg_docbottom.gif);
+	background-position:bottom left;
+	background-repeat:no-repeat;	
+border-bottom:1px #ffffff solid;
+	clear:both;
+	}
+
+#doc #in #left
+	{
+		width:531px;
+		float:left;
+		
+	}
+	
+#doc #in #right
+	{
+		float:right;
+		width:250px;
+	}
+	
+#doc #in #right #menu
+	{
+	padding:80px 20px 50px 45px;
+	}
+	
+#doc #in #right #menu a
+	{
+	color:#C8A940;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-transform:uppercase;
+	font-weight:bold;
+	display:block;
+	margin-bottom:3px;
+	background-image:url(images/iko_kytka.gif);
+	background-repeat:no-repeat;
+	padding-left:15px;
+	background-position:bottom left;
+	}
+	
+#doc #in #left .padd
+	{
+	padding:45px 23px 30px 56px;
+
+	}	
+
+	
+#doc img
+	{
+	border-top:5px #ffffff solid;
+	border-left:5px #ffffff solid;
+	_border-right:5px #ffffff solid;
+	_border-bottom:5px #ffffff solid;
+	padding-right:7px;
+	padding-bottom:7px;
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	background-image:url(images/bg_img.gif);
+	}

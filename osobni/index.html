@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliška – Osobní stránky</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #fdf6f0; color: #4a3728; line-height: 1.7; }
+
+body::before {
+    content: "🐾  🐾  🐾  🐾  🐾  🐾  🐾  🐾  🐾  🐾  🐾  🐾";
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    font-size: 40px; opacity: 0.04; pointer-events: none; z-index: 0;
+    letter-spacing: 60px; line-height: 120px; word-spacing: 40px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #f8bbd0, #ffccbc, #ffe0b2);
+    padding: 60px 20px 40px; text-align: center; position: relative; overflow: hidden;
+    border-radius: 0 0 50px 50px;
+}
+.cat-peek-left {
+    position: absolute; top: 10px; left: 20px; font-size: 50px;
+    animation: peekLeft 4s ease-in-out infinite;
+}
+@keyframes peekLeft {
+    0%, 100% { transform: translateX(-60px) rotate(-10deg); opacity: 0; }
+    20%, 80% { transform: translateX(0) rotate(0deg); opacity: 1; }
+}
+.cat-peek-right {
+    position: absolute; top: 15px; right: 25px; font-size: 45px;
+    animation: peekRight 5s ease-in-out infinite 1s;
+}
+@keyframes peekRight {
+    0%, 100% { transform: translateX(60px) rotate(10deg); opacity: 0; }
+    25%, 75% { transform: translateX(0) rotate(0deg); opacity: 1; }
+}
+.hero h1 { font-size: 2.2em; color: #bf360c; position: relative; z-index: 1; }
+.hero h1::after { content: " 🐱"; font-size: 0.7em; }
+.hero p { color: #8d6e63; margin-top: 8px; position: relative; z-index: 1; }
+
+.container { max-width: 700px; margin: 0 auto; padding: 40px 20px; position: relative; z-index: 1; }
+.paw-divider { text-align: center; font-size: 1.8em; margin: 20px 0; letter-spacing: 15px; opacity: 0.5; }
+
+.links { display: grid; grid-template-columns: 1fr; gap: 20px; }
+
+.link-card {
+    background: #fff; border-radius: 20px; padding: 25px 30px; position: relative;
+    box-shadow: 0 4px 15px rgba(191,54,12,0.08); border: 2px solid #ffe0b2;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; color: #4a3728; display: block;
+}
+.link-card:hover { transform: translateY(-4px) rotate(0.5deg); box-shadow: 0 8px 25px rgba(191,54,12,0.12); }
+.link-card .card-cat { position: absolute; top: -18px; right: 20px; font-size: 28px; }
+.link-card h3 { color: #e65100; font-size: 1.2em; margin-bottom: 6px; }
+.link-card p { font-size: 0.9em; color: #8d6e63; }
+
+.back-link { text-align: center; margin-top: 30px; }
+.back-link a { color: #bf360c; text-decoration: none; font-weight: 600; }
+.back-link a:hover { text-decoration: underline; }
+
+footer { text-align: center; padding: 30px; color: #bcaaa4; font-size: 0.85em; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <span class="cat-peek-left">🐱</span>
+    <span class="cat-peek-right">😺</span>
+    <h1>Osobni stranky</h1>
+    <p>Rozcestnik pro moje veci</p>
+</div>
+
+<div class="container">
+    <div class="paw-divider">🐾🐾🐾</div>
+
+    <div class="links">
+        <a href="stare/" class="link-card">
+            <span class="card-cat">📷</span>
+            <h3>Puvodni stranky</h3>
+            <p>Moje prvni webovky z roku 2005 — detske fotky, rodina, vzpominky</p>
+        </a>
+
+        <a href="#" class="link-card">
+            <span class="card-cat">📚</span>
+            <h3>Skola</h3>
+            <p>Materialy, poznamky, projekty z PedF UK</p>
+        </a>
+
+        <a href="#" class="link-card">
+            <span class="card-cat">🎨</span>
+            <h3>Osobni projekty</h3>
+            <p>Dalsi veci a napady</p>
+        </a>
+    </div>
+
+    <div class="back-link">
+        <a href="../">← Zpet na hlavni stranku</a>
+    </div>
+</div>
+
+<footer>🐾 Elisciny soukrome stranky</footer>
+
+</body>
+</html>
